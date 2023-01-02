@@ -11,7 +11,7 @@ def start(message):
 
 @bot.message_handler(content_types=['text'])
 def get_user_text(message):
-    if message.text == "Hello":
+    if message.text == "Hello!":
         bot.send_message(message.chat.id, "И тебе привет!", parse_mode='html')
     elif message.text == "ID":
         bot.send_message(message.chat.id, f"Твой ID: {message.from_user.id}", parse_mode='html')
